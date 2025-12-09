@@ -1,0 +1,128 @@
+/* Shared site styles */
+:root {
+    --brand: #667eea;
+    --brand-dark: #764ba2;
+    --muted: #f4f6fb;
+    --muted-2: #eef2ff;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: #fff
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+.site-header img {
+    width: 80px;
+    height: auto
+}
+
+/* Circular logo helper */
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block
+}
+
+/* Buttons / links styled as buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 6px 8px 6px 0;
+    background: var(--muted);
+    border-radius: 12px;
+    text-decoration: none;
+    color: #111;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(16, 24, 40, 0.04);
+    transition: transform .12s ease, box-shadow .12s ease, background .12s ease
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(16, 24, 40, 0.08)
+}
+
+.btn:focus {
+    outline: 3px solid rgba(102, 126, 234, 0.18);
+    outline-offset: 3px
+}
+
+.btn-primary {
+    background: var(--brand);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 14px
+}
+
+.btn-primary:hover {
+    background: var(--brand-dark)
+}
+
+.btn-ghost {
+    background: transparent;
+    border: 1px solid #e6e9f8;
+    color: #223
+}
+
+.btn-ghost:hover {
+    background: var(--muted-2)
+}
+
+/* Login container adjustments */
+.login-container {
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    max-width: 420px
+}
+
+/* Utility */
+.text-center {
+    text-align: center
+}
+
+/* Gallery helpers (kept from Designs) */
+.gallery-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0
+}
+
+.gallery-table td {
+    padding: 8px;
+    text-align: center;
+    vertical-align: top
+}
+
+.thumb {
+    display: block;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06)
+}
+
+@media (min-width:700px) {
+    .gallery-table td {
+        width: 33%
+    }
+}
