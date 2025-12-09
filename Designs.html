@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>MARO DESIGNS — Designs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Designs portfolio for Marwan-Osama" />
+    <meta name='keywords' content='Designs, Portfolio, Creative, photoshop' />
+    <meta name="author" content="Marwan-Osama">
+    <style>
+        :root {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            color: #111;
+        }
+
+        .site-header {
+            display: flex;
+            align-items: center;
+            gap: 16px
+        }
+
+        .site-header img {
+            width: 80px;
+            height: auto
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 8px 12px;
+            margin-right: 8px;
+            background: #eee;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #111
+        }
+
+        h1 {
+            margin: 0 0 8px
+        }
+
+        .lead {
+            margin: 8px 0 20px;
+            color: #444
+        }
+
+        /* gallery table */
+        .gallery-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0
+        }
+
+        .gallery-table td {
+            padding: 8px;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .thumb {
+            display: block;
+            border-radius: 6px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08)
+        }
+
+        /* pricing table */
+        .pricing {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px
+        }
+
+        .pricing th,
+        .pricing td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left
+        }
+
+        .pricing th {
+            background: #f7f7f7
+        }
+
+        @media (min-width:700px) {
+            .gallery-table td {
+                width: 33%
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <img src="MY-LOGO-2.jpg" alt="MARO DESIGNS Logo" class="logo">
+        <div>
+            <h1>MARO DESIGNS</h1>
+            <div class="lead">Thumbnails · Facebook Covers · Logos</div>
+        </div>
+    </header>
+
+    <nav style="margin:12px 0">
+        <a href="index.html" class="btn">Home</a>
+        <a href="Designs.html" class="btn">Designs</a>
+        <a href="Login.html" class="btn btn-primary">Login</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Design Gallery</h2>
+            <table class="gallery-table" role="presentation">
+                <tr>
+                    <td><img src="E:\PHOTOSHOP\DSS ACADEMY\BANNER-DSS.png" alt="Design 1" class="thumb"></td>
+                    <td><img src="E:\PHOTOSHOP\1st-sec1.jpg" alt="Design 2" class="thumb"></td>
+                    <td><img src="E:\PHOTOSHOP\mr-mo2-violet.jpg" alt="Design 3" class="thumb"></td>
+                </tr>
+                <tr>
+                    <td><img src="E:\PHOTOSHOP\ALL-BOOKS.png" alt="Design 4" class="thumb"></td>
+                    <td><img src="E:\PHOTOSHOP\Badr Hoodie\32.jpg" alt="Design 5" class="thumb"></td>
+                    <td><img src="E:\PHOTOSHOP\mahmoud\1111.png" alt="Design 6" class="thumb"></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Design Services and Pricing</h2>
+            <form>
+                <table class="pricing">
+                    <thead>
+                        <tr>
+                            <th>Choose</th>
+                            <th>Design Type</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input id="thum" input type="checkbox" name="design" value="thumbnails"></td>
+                            <td>Custom Thumbnails</td>
+                            <td>150£</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="design" value="facebook-covers"></td>
+                            <td>Facebook Covers</td>
+                            <td>100£</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="design" value="logos"></td>
+                            <td>Professional Logos</td>
+                            <td>200£</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="design" value="social-media-graphics"></td>
+                            <td>Social Media Graphics</td>
+                            <td>150£</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="design" value="branding-materials"></td>
+                            <td>Branding Materials</td>
+                            <td>300£</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="design" value="custom-requests"></td>
+                            <td>Custom Requests</td>
+                            <td>Contact for Quote</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top:12px"><button type="submit" class="btn btn-primary">Request Quote</button></p>
+
+                <p>If You Have A Design And Want Somthing Similar,Upload It</p>
+                <input type="file" name="design-upload" accept="image/*,.psd,.ai,.svg,.jpg,.png" />
+                <q><em>Note: Prices may vary based on project complexity and requirements. Contact us for detailed
+                        quotes.</em></Q>
+            </form>
+        </section>
+
+    </main>
+
+    <footer style="margin-top:24px;color:#666">
+        <p><em>Contact us today to get started on your next project!</em></p>
+        <p>© 2025 <strong>Marwan-Osama</strong> — All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
